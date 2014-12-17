@@ -1,0 +1,8 @@
+<form id="controller">
+  controllers_id : 
+  <% controllers.forEach(function(controller) { %>
+    <label>
+      <input type="radio" <%- user && user.controller_id == controller.id ? 'checked' : '' %> name="controller_id" value="<%= controller.id %>"/> <%= controller.name %>
+    </label>
+  <% }); %>
+</form>

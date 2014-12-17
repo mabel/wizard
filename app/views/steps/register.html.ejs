@@ -1,0 +1,72 @@
+<form id="register">
+  <div class="title">
+    Мои данные
+  </div>
+  
+  <div class="col">
+
+    <label class="label">
+      Имя
+    </label>
+      <input name="firstName" class="input" type="text" />
+
+    <label class="label">
+      Фамилия
+      <input name "lastName" class="input" type="text" />
+    </label>
+  
+  </div>
+
+  <div class="col">
+
+    <label class="label">
+      Телефон
+      <input name="phone" class="input" type="text" />
+    </label>
+    <label class="label">
+      E-MAIL
+      <input name="email" class="input" type="text" value="<%= user ? user.email : '' %>" />
+    </label>
+
+  </div>
+
+  <div class="col">
+
+    <label class="label">
+      Пароль
+      <input name="password" class="input" type="text" />
+    </label>
+        
+    <label class="label">
+      Повторить пароль
+      <input class="input" type="text" />
+    </label>
+
+  </div>
+
+  <div class="title">
+      В случае аварии 
+  </div>
+  
+  <div class="col">
+    <label class="label">
+      Отправить SMS
+      <input name="contactSms" class="input" type="text" />
+    </label>
+
+    <label class="label">
+      Отправить E-MAIL
+      <input name="contactEmail" class="input" type="text" />
+    </label>
+
+    <label class="label">
+      Тех. служба
+      <input name="contactSupport" class="input" type="text" />
+    </label>
+
+    <label class="label">
+      Служба охраны
+      <input name="contactSecurity" class="input" type="text" />
+    </label>
+  </div>
+</form>

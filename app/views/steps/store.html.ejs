@@ -1,0 +1,75 @@
+<div id="store">
+  <!-- Nav tabs -->
+  <ul class="js-nav nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#security" aria-controls="security" role="tab" data-toggle="tab">security</a>
+    </li>
+    <li role="presentation">
+      <a href="#energy" aria-controls="energy" role="tab" data-toggle="tab">energy</a>
+    </li>
+    <li role="presentation">
+      <a href="#comfort" aria-controls="comfort" role="tab" data-toggle="tab">comfort</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content tabcontrol">
+    <div role="tabpanel" class="tab-pane active" id="security">
+      <% devices.security.forEach(function(device) { %>
+        <%= device.title %>
+        <%= device.description %>
+        <%= device.price %>
+        <%= device.availability %>
+        <%= device.id %>
+      <% }); %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="energy">
+      <% devices.energy.forEach(function(device) { %>
+        <%= device.title %>
+        <%= device.description %>
+        <%= device.price %>
+        <%= device.availability %>
+        <%= device.id %>
+      <% }); %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="comfort">
+      <% devices.comfort.forEach(function(device) { %>
+        <%= device.title %>
+        <%= device.description %>
+        <%= device.price %>
+        <%= device.availability %>
+        <%= device.id %>
+      <% }); %>
+    </div>
+  </div>
+</div>
+
+
+<!-- <section class="second">
+  <div class="controllers">
+    <button type="button" class="controller">
+        ZigBee
+    </button>
+    <button type="button" class="controller">
+        Z-Wave
+    </button>
+    <button type="button" class="controller">
+        ZigBee+
+    </button>
+    <button type="button" class="controller">
+        Z-Wave+
+    </button>
+  </div>    
+  <div class="title">
+        Выберите контроллёр для управление своим домом и системами
+  </div class="title">
+  <div class="controllerImage">
+    
+  </div>
+  <div class="controllerName">
+    UNIVERSAL
+  </div>
+  <div class="controllerBuy">
+    <label><input type="checkbox"> BUY </input></label>
+  </div>
+</section> -->

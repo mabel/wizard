@@ -1,0 +1,41 @@
+{
+  "name": "wizard",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/ls_roman/freelance-wizard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.0",
+    "bootable": "0.2.x",
+    "bootable-environment": "0.2.x",
+    "connect-powered-by": "0.1.x",
+    "connect-redis": "^2.1.0",
+    "ejs": "0.8.x",
+    "es6-promise": "^2.0.0",
+    "express": "3.x.x",
+    "express-session": "^1.9.3",
+    "hiredis": "^0.1.17",
+    "locomotive": "0.4.x",
+    "morgan": "^1.5.0",
+    "nohm": "^0.9.6",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "redis": "^0.12.1",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}
